@@ -1,0 +1,175 @@
+[
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.DoctorController",
+    "Method": "AddOrUpdateDoctor",
+    "RelativePath": "api/Doctor/add-update-doctor/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addDoctorDTO",
+        "Type": "Doctor_Patient_System.Models.AddDoctorDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.DoctorController",
+    "Method": "GetAllDoctor",
+    "RelativePath": "api/Doctor/get-all-doctor-list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.DoctorController",
+    "Method": "GetDoctorByID",
+    "RelativePath": "api/Doctor/get-doctor-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.PatientController",
+    "Method": "AddOrUpdatePatient",
+    "RelativePath": "api/Patient/add-update-patient/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addPatientDTo",
+        "Type": "Doctor_Patient_System.Models.AddPatientDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.PatientController",
+    "Method": "DeletePatient",
+    "RelativePath": "api/Patient/delete-patient-by-id/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.PatientController",
+    "Method": "GetAllPatientList",
+    "RelativePath": "api/Patient/get-all-patient-list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.PatientController",
+    "Method": "GetPatientByID",
+    "RelativePath": "api/Patient/get-patient-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.PrescriptionController",
+    "Method": "AddPrecription",
+    "RelativePath": "api/Prescription/add-prescription",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prescritionDTO",
+        "Type": "Doctor_Patient_System.Models.PrescriptionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.PrescriptionController",
+    "Method": "getAllPrescription",
+    "RelativePath": "api/Prescription/get-all-prescriptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.PrescriptionController",
+    "Method": "GetPrescriptionByID",
+    "RelativePath": "api/Prescription/get-prescription-by-id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Doctor_Patient_System.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Doctor_Patient_System.WeatherForecast, Doctor-Patient-System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
