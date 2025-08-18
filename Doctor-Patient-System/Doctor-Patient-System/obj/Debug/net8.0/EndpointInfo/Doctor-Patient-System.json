@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Doctor/get-all-doctor-list": {
+    "/api/Doctor/get-all-doctor-details": {
       "get": {
         "tags": [
           "Doctor"
@@ -17,21 +17,32 @@
         }
       }
     },
-    "/api/Doctor/add-update-doctor/{id}": {
-      "post": {
+    "/api/Doctor/get-doctor-details-by-doctorID": {
+      "get": {
         "tags": [
           "Doctor"
         ],
         "parameters": [
           {
             "name": "id",
-            "in": "path",
-            "required": true,
+            "in": "query",
             "schema": {
               "type": "integer",
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doctor/add-doctor": {
+      "post": {
+        "tags": [
+          "Doctor"
         ],
         "requestBody": {
           "content": {
@@ -52,29 +63,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Doctor/get-doctor-by-id/{id}": {
-      "get": {
-        "tags": [
-          "Doctor"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"

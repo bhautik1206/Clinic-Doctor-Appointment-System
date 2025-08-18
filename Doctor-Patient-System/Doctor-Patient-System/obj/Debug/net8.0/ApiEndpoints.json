@@ -1,20 +1,15 @@
 [
   {
     "ContainingType": "Doctor_Patient_System.Controllers.DoctorController",
-    "Method": "AddOrUpdateDoctor",
-    "RelativePath": "api/Doctor/add-update-doctor/{id}",
+    "Method": "addDoctor",
+    "RelativePath": "api/Doctor/add-doctor",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "addDoctorDTO",
+        "Name": "addDoctorDto",
         "Type": "Doctor_Patient_System.Models.AddDoctorDTO",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -22,8 +17,8 @@
   },
   {
     "ContainingType": "Doctor_Patient_System.Controllers.DoctorController",
-    "Method": "GetAllDoctor",
-    "RelativePath": "api/Doctor/get-all-doctor-list",
+    "Method": "getAllDoctorDetails",
+    "RelativePath": "api/Doctor/get-all-doctor-details",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -32,8 +27,8 @@
   },
   {
     "ContainingType": "Doctor_Patient_System.Controllers.DoctorController",
-    "Method": "GetDoctorByID",
-    "RelativePath": "api/Doctor/get-doctor-by-id/{id}",
+    "Method": "getDoctorDetailsByID",
+    "RelativePath": "api/Doctor/get-doctor-details-by-doctorID",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -41,7 +36,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
