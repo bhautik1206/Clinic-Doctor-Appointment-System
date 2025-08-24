@@ -1,0 +1,7 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spGetDoctorByID`(
+  IN p_doctorId INT #input route
+)
+BEGIN
+  #Routine body goes here...
+  select * from doctor where DoctorId = @p_doctorId;
+END

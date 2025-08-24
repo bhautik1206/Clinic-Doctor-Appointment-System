@@ -1,0 +1,8 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spAddNewDoctor`(#input route
+  IN p_name VARCHAR(300), IN p_specialzation LONGTEXT, IN p_Email LONGTEXT, IN p_Phone LONGTEXT)
+BEGIN
+  #Routine body goes here...
+  INSERT INTO doctor ( DName, Specialization, Email, Phone)
+  VALUES
+  ( p_name, p_specialzation, p_Email, p_Phone);
+END

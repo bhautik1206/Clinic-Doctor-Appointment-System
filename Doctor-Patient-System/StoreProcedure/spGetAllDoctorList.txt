@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spGetAllDoctorList`(
+  IN p_doctorId INT #input route
+)
+BEGIN
+  #Routine body goes here...
+  IF p_doctorId = 0  THEN
+    SELECT * FROM doctor;
+  ELSE
+    SELECT * FROM doctor WHERE DoctorId = p_doctorId;
+  END If;
+END

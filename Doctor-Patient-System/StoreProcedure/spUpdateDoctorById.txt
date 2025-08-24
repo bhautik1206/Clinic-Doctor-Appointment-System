@@ -1,0 +1,10 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spUpdateDoctorById`(IN p_doctorId INT, IN p_name VARCHAR (300), IN p_specialzation LONGTEXT, IN p_Email LONGTEXT, IN p_Phone LONGTEXT)
+BEGIN
+  UPDATE doctor
+  SET DName = p_name,
+  Specialization = p_specialzation,
+  Email = p_Email,
+  Phone = p_Phone
+  WHERE
+    DoctorId = p_doctorId;
+END
