@@ -1,0 +1,7 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spDeleteDoctorById`(
+  In pDoctorId INT
+)
+BEGIN
+  #Routine body goes here...
+  Delete from doctor where DoctorId = pDoctorId;
+END

@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spAddNewPatient`(
+  In p_patientId int,
+  IN p_name LONGTEXT,
+  IN D_Dob DATETIME,
+  IN p_number LONGTEXT,
+  IN p_DoctorId INT
+)
+BEGIN
+  #Routine body goes here...
+  Insert into patients (PatientId ,PName, DOB, Number , DoctorId ) values (PatientId = p_patientId, PName = p_name , DOB = D_Dob , Number = p_number, DoctorId = p_DoctorId);
+END

@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spGetAllPatients`()
+BEGIN
+  #Routine body goes here...
+  SELECT * from patients;
+END

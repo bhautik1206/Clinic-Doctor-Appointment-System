@@ -1,0 +1,7 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `spGetPatientById`(
+  IN p_patientID INT
+)
+BEGIN
+  #Routine body goes here...
+  select * from patients where PatientId = p_patientID;
+END
