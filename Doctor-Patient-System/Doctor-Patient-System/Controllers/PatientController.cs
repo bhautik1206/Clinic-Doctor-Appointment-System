@@ -29,9 +29,11 @@ namespace Doctor_Patient_System.Controllers
             var existencePatient = dbContext.Patients.Find(id);
             if(existencePatient!= null)
             {
-                existencePatient.Name = addPatientDTo.Name;
+                existencePatient.PName = addPatientDTo.PName;
                 existencePatient.DOB = addPatientDTo.DOB;
                 existencePatient.Number = addPatientDTo.Number;
+                existencePatient.DoctorId = addPatientDTo.DoctorId;
+
                 dbContext.SaveChanges();
                 return Ok(existencePatient);
             }
@@ -39,10 +41,11 @@ namespace Doctor_Patient_System.Controllers
             {
                 var newPatience = new Patient()
                 {
-                    Name = addPatientDTo.Name,
+                    PName = addPatientDTo.PName,
                     DOB = addPatientDTo.DOB,
                     Number = addPatientDTo.Number,
                     PatientId = addPatientDTo.PatientId,
+                    DoctorId = addPatientDTo.DoctorId,
                 };
                 dbContext.Add(newPatience);
                 dbContext.SaveChanges();

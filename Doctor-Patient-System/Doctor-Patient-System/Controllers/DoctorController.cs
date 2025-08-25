@@ -38,7 +38,7 @@ namespace Doctor_Patient_System.Controllers
         {
             var doctorEntity  = new Doctor()
             {
-                Name = addDoctorDto.Name,
+                Name = addDoctorDto.DName,
                 DoctorId = addDoctorDto.DoctorId,
                 Specialization = addDoctorDto.Specialization,
                 Email = addDoctorDto.Email,

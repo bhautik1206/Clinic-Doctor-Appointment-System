@@ -279,7 +279,7 @@
     "schemas": {
       "AddDoctorDTO": {
         "required": [
-          "name",
+          "dName",
           "specialization"
         ],
         "type": "object",
@@ -288,7 +288,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "dName": {
             "type": "string",
             "nullable": true
           },
@@ -310,8 +310,8 @@
       "AddPatientDTO": {
         "required": [
           "dob",
-          "name",
-          "patientId"
+          "patientId",
+          "pName"
         ],
         "type": "object",
         "properties": {
@@ -319,7 +319,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "name": {
+          "pName": {
             "type": "string",
             "nullable": true
           },
@@ -330,6 +330,10 @@
           "number": {
             "type": "string",
             "nullable": true
+          },
+          "doctorId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
